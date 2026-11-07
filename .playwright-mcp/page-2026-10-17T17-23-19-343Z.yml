@@ -1,0 +1,238 @@
+- generic [active] [ref=f4e1]:
+  - generic "Bật / Tắt nhạc cưới" [ref=f4e2]:
+    - button "Bật tắt nhạc nền" [ref=f4e3] [cursor=pointer]:
+      - generic [ref=f4e4]: 
+  - generic [ref=f4e8]:
+    - generic: ❖ ❖
+    - generic [ref=f4e9]: Wedding Invitation
+    - heading "Thiệp Mời" [level=1] [ref=f4e10]
+    - generic [ref=f4e11]:
+      - text: Thái Bình
+      - generic [ref=f4e12]: "&"
+      - text: Thùy Nguyên
+    - paragraph [ref=f4e13]: 16 Tháng 11 Năm 2026
+    - generic "Chạm để mở thiệp cưới" [ref=f4e15] [cursor=pointer]: 囍
+    - generic [ref=f4e18] [cursor=pointer]:
+      - generic [ref=f4e19]: 
+      - generic [ref=f4e20]: Chạm vào con dấu sáp để mở thiệp
+  - main [ref=f4e21]:
+    - generic [ref=f4e23]:
+      - generic [ref=f4e24]: 囍
+      - generic [ref=f4e25]: Kính Mời Dự Lễ Thành Hôn
+      - heading "Thái Bình & Thùy Nguyên" [level=2] [ref=f4e26]:
+        - text: Thái Bình
+        - generic [ref=f4e27]: "&"
+        - text: Thùy Nguyên
+      - generic [ref=f4e30]:
+        - img "Thái Bình & Thùy Nguyên" [ref=f4e31]
+        - generic [ref=f4e32]: Mừng Tình Yêu Đơm Hoa
+      - generic [ref=f4e33]:
+        - generic [ref=f4e34]: "16"
+        - text: •
+        - generic [ref=f4e35]: "11"
+        - text: •
+        - generic [ref=f4e36]: "2026"
+      - generic [ref=f4e37]: (Nhằm ngày mùng 08 tháng 10 năm Bính Ngọ - Âm lịch)
+    - generic [ref=f4e38]:
+      - generic [ref=f4e39]: —Đôi Uyên Ương—
+      - heading "Cô Dâu & Chú Rể" [level=3] [ref=f4e40]
+      - generic [ref=f4e41]: ❦
+      - generic [ref=f4e45]:
+        - generic [ref=f4e46]:
+          - img "Chú rể Lưu Thái Bình" [ref=f4e48]
+          - generic [ref=f4e49]: Chú Rể
+          - heading "Lưu Thái Bình" [level=4] [ref=f4e50]
+          - generic [ref=f4e51]: Trưởng Nam
+          - paragraph [ref=f4e52]: Chàng trai ấm áp, luôn đồng hành và dành trọn tình yêu thương chân thành nhất cho người bạn đời của mình.
+        - generic [ref=f4e53]: 
+        - generic [ref=f4e56]:
+          - img "Cô dâu Nguyễn Thị Thùy Nguyên" [ref=f4e58]
+          - generic [ref=f4e59]: Cô Dâu
+          - heading "Nguyễn Thị Thùy Nguyên" [level=4] [ref=f4e60]
+          - generic [ref=f4e61]: Trưởng Nữ
+          - paragraph [ref=f4e62]: Cô gái dịu dàng, nụ cười rạng rỡ, người mang đến sự ấm áp và bình yên trong từng khoảnh khắc chung đôi.
+      - generic [ref=f4e63]: "\"Tình yêu không chỉ là nhìn nhau, mà là cùng nhìn về một hướng và cùng nắm tay đi qua mọi thăng trầm của cuộc đời.\""
+    - generic [ref=f4e64]:
+      - generic [ref=f4e65]: —Thời Gian & Địa Điểm—
+      - heading "Thông Tin Tiệc Cưới" [level=3] [ref=f4e66]
+      - generic [ref=f4e67]: ❖
+      - generic [ref=f4e71]:
+        - text: Trân trọng kính mời
+        - strong [ref=f4e72]: Bạn và người thương
+        - text: đến dự buổi tiệc rượu chung vui cùng gia đình chúng tôi
+      - generic [ref=f4e73]:
+        - generic [ref=f4e74]: Đếm ngược đến ngày hạnh phúc
+        - generic [ref=f4e75]:
+          - generic [ref=f4e76]:
+            - generic [ref=f4e77]: "29"
+            - generic [ref=f4e78]: Ngày
+          - generic [ref=f4e79]:
+            - generic [ref=f4e80]: "10"
+            - generic [ref=f4e81]: Giờ
+          - generic [ref=f4e82]:
+            - generic [ref=f4e83]: "37"
+            - generic [ref=f4e84]: Phút
+          - generic [ref=f4e85]:
+            - generic [ref=f4e86]: "10"
+            - generic [ref=f4e87]: Giây
+      - generic [ref=f4e88]:
+        - text: 囍
+        - generic [ref=f4e89]: Tiệc Cưới Tại Tư Gia Nhà Gái
+        - generic [ref=f4e90]:
+          - generic [ref=f4e91]: 
+          - text: Vào Lúc 11:00 Sáng
+        - generic [ref=f4e92]: Thứ Hai, ngày 16 tháng 11 năm 2026
+        - generic [ref=f4e93]: (Tức ngày 08 tháng 10 năm Bính Ngọ - Âm Lịch)
+        - generic [ref=f4e94]:
+          - generic [ref=f4e95]:
+            - generic [ref=f4e96]: 
+            - text: Tư Gia Nhà Gái
+          - generic [ref=f4e97]: Kinh năm, ấp Rạch Gốc, xã Phan Ngọc Hiển, Cà Mau
+        - generic [ref=f4e98]:
+          - button " Thêm Vào Lịch Nhắc" [ref=f4e99] [cursor=pointer]:
+            - generic [ref=f4e100]: 
+            - text: Thêm Vào Lịch Nhắc
+          - button " Sao Chép Địa Chỉ" [ref=f4e101] [cursor=pointer]:
+            - generic [ref=f4e102]: 
+            - text: Sao Chép Địa Chỉ
+          - link " Chỉ Đường Đi" [ref=f4e103] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/?api=1&query=R%E1%BA%A1ch+G%E1%BB%91c,+Ng%E1%BB%8Dc+Hi%E1%BB%83n,+C%C3%A0+Mau
+            - generic [ref=f4e104]: 
+            - text: Chỉ Đường Đi
+    - generic [ref=f4e105]:
+      - generic [ref=f4e106]: —Lộ Trình Buổi Tiệc—
+      - heading "Chương Trình Hôn Lễ" [level=3] [ref=f4e107]
+      - generic [ref=f4e108]: ❦
+      - generic [ref=f4e112]:
+        - generic [ref=f4e115]:
+          - generic [ref=f4e116]: 10:30
+          - generic [ref=f4e117]: Đón Tiếp Quan Khách
+          - generic [ref=f4e118]: Gia đình đón chào khách quý & chụp ảnh lưu niệm tại bàn backdrop
+        - generic [ref=f4e121]:
+          - generic [ref=f4e122]: 11:00
+          - generic [ref=f4e123]: Lễ Thành Hôn
+          - generic [ref=f4e124]: Nghi thức ra mắt hai họ, trao nhẫn cưới và lời hẹn ước trăm năm
+        - generic [ref=f4e127]:
+          - generic [ref=f4e128]: 11:30
+          - generic [ref=f4e129]: Khai Tiệc Mừng Hạnh Phúc
+          - generic [ref=f4e130]: Cắt bánh, rót rượu mừng và nâng ly chung vui cùng quý khách
+        - generic [ref=f4e133]:
+          - generic [ref=f4e134]: 13:00
+          - generic [ref=f4e135]: Lời Cảm Ơn & Tiễn Khách
+          - generic [ref=f4e136]: Cô dâu chú rể cùng gia đình gửi lời tri ân sâu sắc tới quý khách
+    - generic [ref=f4e137]:
+      - generic [ref=f4e138]: —Album Ảnh Cưới—
+      - heading "Khoảnh Khắc Hạnh Phúc" [level=3] [ref=f4e139]
+      - generic [ref=f4e140]: ❖
+      - paragraph [ref=f4e144]: Chạm vào hình ảnh để xem toàn cảnh với chất lượng cao nhất
+      - generic [ref=f4e145]:
+        - generic [ref=f4e146] [cursor=pointer]:
+          - img "Khoảnh khắc cô dâu chú rể" [ref=f4e147]
+          - generic [ref=f4e148]: 
+        - generic [ref=f4e150] [cursor=pointer]:
+          - img "Nụ cười hạnh phúc" [ref=f4e151]
+          - generic [ref=f4e152]: 
+        - generic [ref=f4e154] [cursor=pointer]:
+          - img "Tình yêu ngập tràn ánh nắng" [ref=f4e155]
+          - generic [ref=f4e156]: 
+        - generic [ref=f4e158] [cursor=pointer]:
+          - img "Trang phục cưới vintage trước cổng miếu cổ" [ref=f4e159]
+          - generic [ref=f4e160]: 
+        - generic [ref=f4e162] [cursor=pointer]:
+          - img "Cùng uống ly cà phê tình yêu" [ref=f4e163]
+          - generic [ref=f4e164]: 
+        - generic [ref=f4e166] [cursor=pointer]:
+          - img "Bàn tay nắm lấy bàn tay" [ref=f4e167]
+          - generic [ref=f4e168]: 
+    - generic [ref=f4e170]:
+      - generic [ref=f4e171]: —Thước Phim Kỷ Niệm—
+      - heading "Video Thiệp Cưới" [level=3] [ref=f4e172]
+      - generic [ref=f4e173]: ❦
+      - generic [ref=f4e177]: Trình duyệt của bạn không hỗ trợ thẻ video.
+    - generic [ref=f4e181]:
+      - generic [ref=f4e182]: —Chỉ Đường—
+      - heading "Bản Đồ Đến Tư Gia" [level=3] [ref=f4e183]
+      - generic [ref=f4e184]: ❖
+      - generic [ref=f4e188]:
+        - iframe [ref=f4e190]
+        - generic [ref=f4e191]:
+          - generic [ref=f4e192]: Tư Gia Nhà Gái
+          - generic [ref=f4e193]: Kinh năm, ấp Rạch Gốc, xã Phan Ngọc Hiển, Cà Mau
+          - link " Mở Ứng Dụng Google Maps" [ref=f4e194] [cursor=pointer]:
+            - /url: https://maps.google.com/?q=R%E1%BA%A1ch+G%E1%BB%91c,+Ng%E1%BB%8Dc+Hi%E1%BB%83n,+C%C3%A0+Mau
+            - generic [ref=f4e195]: 
+            - text: Mở Ứng Dụng Google Maps
+    - generic [ref=f4e196]:
+      - generic [ref=f4e197]: —Gửi Trao Yêu Thương—
+      - heading "Xác Nhận & Lời Chúc" [level=3] [ref=f4e198]
+      - generic [ref=f4e199]: ❦
+      - generic [ref=f4e203]:
+        - generic [ref=f4e204]:
+          - heading " Xác Nhận Tham Dự" [level=4] [ref=f4e205]:
+            - generic [ref=f4e206]: 
+            - text: Xác Nhận Tham Dự
+          - paragraph [ref=f4e207]: "Để gia đình đón tiếp quý khách chu đáo nhất, xin vui lòng xác nhận sự hiện diện của bạn:"
+          - generic [ref=f4e208]:
+            - generic [ref=f4e209]:
+              - generic [ref=f4e210]: Họ và tên của bạn *
+              - textbox "Họ và tên của bạn *" [ref=f4e211]:
+                - /placeholder: "Ví dụ: Nguyễn Văn A"
+            - generic [ref=f4e212]:
+              - generic [ref=f4e213]: Bạn có thể tham dự chứ? *
+              - generic [ref=f4e214]:
+                - generic [ref=f4e215] [cursor=pointer]:
+                  - radio "Chắc chắn tham dự" [checked] [ref=f4e216]
+                  - text: Chắc chắn tham dự
+                - generic [ref=f4e217] [cursor=pointer]:
+                  - radio "Rất tiếc không thể đến" [ref=f4e218]
+                  - text: Rất tiếc không thể đến
+            - generic [ref=f4e219]:
+              - generic [ref=f4e220]: Số người tham dự cùng bạn
+              - combobox "Số người tham dự cùng bạn" [ref=f4e221]:
+                - option "Đi 1 mình" [selected]
+                - option "Đi 2 người (cùng người thương)"
+                - option "Đi cùng gia đình (3 người)"
+                - option "Đi cùng gia đình (4 người trở lên)"
+            - button " Gửi Xác Nhận Tham Dự" [ref=f4e222] [cursor=pointer]:
+              - generic [ref=f4e223]: 
+              - text: Gửi Xác Nhận Tham Dự
+        - generic [ref=f4e224]:
+          - heading " Sổ Lưu Bút Lời Chúc" [level=4] [ref=f4e225]:
+            - generic [ref=f4e226]: 
+            - text: Sổ Lưu Bút Lời Chúc
+          - paragraph [ref=f4e227]: "Gửi những lời chúc phúc ngọt ngào và tốt đẹp nhất tới cô dâu & chú rể:"
+          - generic [ref=f4e228]:
+            - generic [ref=f4e229]:
+              - generic [ref=f4e230]: Tên của bạn *
+              - textbox "Tên của bạn *" [ref=f4e231]:
+                - /placeholder: Tên hoặc biệt danh của bạn
+            - generic [ref=f4e232]:
+              - generic [ref=f4e233]: Lời chúc phúc *
+              - textbox "Lời chúc phúc *" [ref=f4e234]:
+                - /placeholder: Nhập lời chúc trăm năm hạnh phúc...
+            - button " Gửi Lời Chúc Mừng" [ref=f4e235] [cursor=pointer]:
+              - generic [ref=f4e236]: 
+              - text: Gửi Lời Chúc Mừng
+          - generic [ref=f4e237]:
+            - generic [ref=f4e238]:
+              - generic [ref=f4e239]:
+                - generic [ref=f4e240]: Gia đình Bác Hai
+                - generic [ref=f4e241]: 18/10/2026
+              - paragraph [ref=f4e242]: Chúc hai cháu trăm năm tình viên mãn, bạc đầu nghĩa phu thê! Hạnh phúc đong đầy!
+            - generic [ref=f4e243]:
+              - generic [ref=f4e244]:
+                - generic [ref=f4e245]: Thanh Thảo & Hoàng Nam
+                - generic [ref=f4e246]: 17/10/2026
+              - paragraph [ref=f4e247]: Bộ ảnh cưới vintage cưng xỉu luôn Thùy Nguyên ơi! Chúc hai bạn một đời an yên, cùng nhau viết tiếp câu chuyện tình thật đẹp!
+            - generic [ref=f4e248]:
+              - generic [ref=f4e249]:
+                - generic [ref=f4e250]: Nhóm Bạn Thân Đại Học
+                - generic [ref=f4e251]: 16/10/2026
+              - paragraph [ref=f4e252]: Chúc mừng chú rể Thái Bình đã rước nàng về dinh! Hẹn gặp đôi bạn trẻ tại Cà Mau ngày 16/11 nha!
+    - generic [ref=f4e253]:
+      - generic [ref=f4e254]: "\"Sự hiện diện của bạn là niềm vinh hạnh của chúng tôi\""
+      - paragraph [ref=f4e255]: Chân thành cảm ơn tình cảm và sự hiện diện quý báu của toàn thể quý khách!
+      - generic [ref=f4e256]: Thái Bình & Thùy Nguyên
+      - button " Chia Sẻ Thiệp Mời Đến Bạn Bè" [ref=f4e258] [cursor=pointer]:
+        - generic [ref=f4e259]: 
+        - text: Chia Sẻ Thiệp Mời Đến Bạn Bè

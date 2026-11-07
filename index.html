@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#7e0f17">
+  
+  <title>Thiệp Cưới - Hoàng Duy & Thanh Hằng</title>
+  <meta name="description" content="Trân trọng kính mời quý khách đến dự buổi tiệc rượu chung vui cùng gia đình chúng tôi vào lúc 10:00 ngày 27/03/2027 tại Nhà hàng Văn Quý, xã Đăk Ơ, Đồng Nai.">
+  
+  <!-- Open Graph / Facebook / Zalo Share Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thiệp Cưới - Hoàng Duy & Thanh Hằng">
+  <meta property="og:description" content="Mừng tình yêu đơm hoa! Trân trọng kính mời bạn và người thương đến dự lễ thành hôn vào lúc 10:00 ngày 27/03/2027 tại Nhà hàng Văn Quý, xã Đăk Ơ, Đồng Nai.">
+  <meta property="og:image" content="assets/images/hero_couple.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Petals Falling Animation Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Background Music Audio -->
+  <audio id="wedding-audio" loop preload="auto">
+    <source src="assets/audio/wedding_music.ogg" type="audio/ogg">
+    <source src="assets/videos/wedding_video.mp4" type="audio/mp4">
+  </audio>
+
+  <!-- Floating Audio Play/Pause Widget -->
+  <div class="audio-widget" id="audio-widget" title="Bật / Tắt nhạc cưới">
+    <button class="audio-btn" id="audio-toggle-btn" aria-label="Bật tắt nhạc nền">
+      <i class="fa-solid fa-volume-xmark" id="audio-icon"></i>
+    </button>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div class="toast-notice" id="toast-notice">
+    <i class="fa-solid fa-circle-check" style="color: #d4af37;"></i>
+    <span id="toast-message">Thông báo</span>
+  </div>
+
+  <!-- ==========================================================================
+       INTERACTIVE ENVELOPE OVERLAY (MỞ THIỆP SANG TRỌNG)
+       ========================================================================== -->
+  <div class="envelope-overlay" id="envelope-overlay">
+    <div class="envelope-bg-pattern"></div>
+    <canvas id="burst-canvas" class="burst-canvas"></canvas>
+    
+    <div class="envelope-container" id="envelope-container">
+      <div class="envelope-3d" id="envelope-3d">
+        <!-- 3D Top Flap -->
+        <div class="envelope-flap" id="envelope-flap">
+          <div class="flap-inner"></div>
+        </div>
+
+        <!-- The Inner Luxury Wedding Card -->
+        <div class="envelope-card" id="envelope-card">
+          <div class="envelope-border-ornament"></div>
+          <div class="envelope-header-tag">Wedding Invitation</div>
+          <h1 class="envelope-title gold-shimmer">Thiệp Mời</h1>
+          
+          <div class="envelope-names gold-shimmer">
+            <span class="name-nowrap">Hoàng Duy</span> <span class="envelope-amp">&</span> <span class="name-nowrap">Thanh Hằng</span>
+          </div>
+          
+          <p style="font-size: 0.95rem; color: #fff8e7; margin-bottom: 6px; font-family: var(--font-serif); font-style: italic;">
+            27 Tháng 03 Năm 2027
+          </p>
+
+          <!-- Wax Seal Button -->
+          <div class="wax-seal-wrapper" id="wax-seal-wrapper">
+            <div class="wax-seal-btn" id="wax-seal-btn" title="Chạm để mở thiệp cưới">
+              <div class="wax-inner-circle">
+                <span class="wax-symbol">囍</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="envelope-hint" id="open-envelope-text">
+        <span>Chạm vào con dấu sáp để mở thiệp</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN INVITATION WRAPPER
+       ========================================================================== -->
+  <main class="invitation-wrapper">
+    <div class="wrapper-ornament-top"></div>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero-section">
+      <div class="hero-double-happiness">囍</div>
+      <div class="hero-invitation-text">Kính Mời Dự Lễ Thành Hôn</div>
+      
+      <h2 class="hero-couple-names">
+        <span class="name-nowrap">Hoàng Duy</span> <span class="and">&</span> <span class="name-nowrap">Thanh Hằng</span>
+      </h2>
+
+      <!-- Couple Photo Frame -->
+      <div class="hero-frame-container">
+        <div class="hero-frame-border">
+          <div class="hero-photo-wrapper">
+            <img src="assets/images/gallery_4.jpg" alt="Hoàng Duy & Thanh Hằng" class="hero-photo" loading="eager">
+            <div class="hero-photo-caption">
+              Mừng Tình Yêu Đơm Hoa
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wedding-date">
+        <span>27</span> • <span>03</span> • <span>2027</span>
+      </div>
+      <div class="hero-lunar-date">
+        (Nhằm ngày 20 tháng 2 năm Đinh Mùi - Âm lịch)
+      </div>
+    </section>
+
+    <!-- 2. COUPLE PROFILE SECTION -->
+    <section class="couple-section" id="couple-section">
+      <span class="section-tag">Đôi Uyên Ương</span>
+      <h3 class="section-title">Cô Dâu & Chú Rể</h3>
+      <div class="section-divider">
+        <div class="line"></div>
+        <div class="symbol">❦</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="couple-grid">
+        <!-- Groom Card -->
+        <div class="couple-card">
+          <div class="couple-avatar-wrap">
+            <img src="assets/images/avatar_groom.jpg" alt="Chú rể Hoàng Duy" class="couple-avatar">
+          </div>
+          <div class="couple-role">Chú Rể</div>
+          <h4 class="couple-name">Hoàng Duy</h4>
+          <div class="couple-rank">Trưởng Nam</div>
+          <p class="couple-desc">
+            Chàng trai ấm áp, luôn đồng hành và dành trọn tình yêu thương chân thành nhất cho người bạn đời của mình.
+          </p>
+        </div>
+
+        <!-- Center Heart -->
+        <div class="couple-center-heart">
+          <div class="heart-circle">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Bride Card -->
+        <div class="couple-card">
+          <div class="couple-avatar-wrap">
+            <img src="assets/images/avatar_bride.jpg" alt="Cô dâu Thanh Hằng" class="couple-avatar">
+          </div>
+          <div class="couple-role">Cô Dâu</div>
+          <h4 class="couple-name">Thanh Hằng</h4>
+          <div class="couple-rank">Thứ Nữ</div>
+          <p class="couple-desc">
+            Cô gái dịu dàng, nụ cười rạng rỡ, người mang đến sự ấm áp và bình yên trong từng khoảnh khắc chung đôi.
+          </p>
+        </div>
+      </div>
+
+      <div class="couple-quote-box">
+        "Tình yêu không chỉ là nhìn nhau, mà là cùng nhìn về một hướng và cùng nắm tay đi qua mọi thăng trầm của cuộc đời."
+      </div>
+    </section>
+
+    <!-- 3. EVENT INVITATION DETAILS & COUNTDOWN -->
+    <section class="event-section" id="event-section">
+      <span class="section-tag">Thời Gian & Địa Điểm</span>
+      <h3 class="section-title">Thông Tin Tiệc Cưới</h3>
+      <div class="section-divider">
+        <div class="line"></div>
+        <div class="symbol">❖</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="event-invitation-message">
+        Trân trọng kính mời <strong>Bạn và người thương</strong><br>
+        đến dự buổi tiệc rượu chung vui cùng gia đình chúng tôi
+      </div>
+
+      <!-- Realtime Countdown Timer -->
+      <div class="countdown-container">
+        <div class="countdown-title">Đếm ngược đến ngày hạnh phúc</div>
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <div class="countdown-num" id="count-days">00</div>
+            <div class="countdown-label">Ngày</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="count-hours">00</div>
+            <div class="countdown-label">Giờ</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="count-minutes">00</div>
+            <div class="countdown-label">Phút</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="count-seconds">00</div>
+            <div class="countdown-label">Giây</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Detail Card -->
+      <div class="event-card">
+        <div class="event-type-badge">Tiệc Cưới Tại Nhà Hàng Văn Quý</div>
+        
+        <div class="event-time-highlight">
+          <i class="fa-regular fa-clock" style="color: var(--color-gold); margin-right: 6px;"></i>
+          Vào Lúc 10:00 Sáng
+        </div>
+        <div class="event-date-highlight">
+          Thứ 7, ngày 27 tháng 03 năm 2027
+        </div>
+        <div class="event-lunar-highlight">
+          (Tức ngày 20 tháng 2 năm Đinh Mùi - Âm lịch)
+        </div>
+
+        <div class="event-location-box">
+          <div class="location-title">
+            <i class="fa-solid fa-location-dot"></i>
+            Địa Điểm Tổ Chức
+          </div>
+          <div class="location-address">
+            Nhà hàng Văn Quý, xã Đăk Ơ, Đồng Nai
+          </div>
+        </div>
+
+        <div class="event-actions">
+          <button class="btn btn-primary" id="add-calendar-btn">
+            <i class="fa-regular fa-calendar-plus"></i>
+            Thêm Vào Lịch Nhắc
+          </button>
+          <button class="btn btn-gold" id="copy-address-btn">
+            <i class="fa-regular fa-copy"></i>
+            Sao Chép Địa Chỉ
+          </button>
+          <a href="https://maps.app.goo.gl/qc1AEUkMJfpkDVLa9" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-solid fa-diamond-turn-right"></i>
+            Chỉ Đường Đi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WEDDING PROGRAM / TIMELINE -->
+    <section class="timeline-section" id="timeline-section">
+      <span class="section-tag">Lộ Trình Buổi Tiệc</span>
+      <h3 class="section-title">Chương Trình Hôn Lễ</h3>
+      <div class="section-divider">
+        <div class="line"></div>
+        <div class="symbol">❦</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-time">08:00</div>
+            <div class="timeline-activity">Lễ Thành Hôn</div>
+            <div class="timeline-detail">Nghi thức ra mắt hai họ, trao nhẫn cưới và lời hẹn ước trăm năm</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-time">09:30</div>
+            <div class="timeline-activity">Đón Tiếp Quan Khách</div>
+            <div class="timeline-detail">Gia đình đón chào khách quý & chụp ảnh lưu niệm tại bàn backdrop</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-time">10:00</div>
+            <div class="timeline-activity">Khai Tiệc Mừng Hạnh Phúc</div>
+            <div class="timeline-detail">Cắt bánh, rót rượu mừng và nâng ly chung vui cùng quý khách</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-time">14:00</div>
+            <div class="timeline-activity">Lời Cảm Ơn & Tiễn Khách</div>
+            <div class="timeline-detail">Cô dâu chú rể cùng gia đình gửi lời tri ân sâu sắc tới quý khách</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WEDDING PHOTO GALLERY -->
+    <section class="gallery-section" id="gallery-section">
+      <span class="section-tag">Album Ảnh Cưới</span>
+      <h3 class="section-title">Khoảnh Khắc Hạnh Phúc</h3>
+      <div class="section-divider">
+        <div class="line"></div>
+        <div class="symbol">❖</div>
+        <div class="line"></div>
+      </div>
+
+      <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 24px; font-style: italic;">
+        Chạm vào hình ảnh để xem toàn cảnh với chất lượng cao nhất
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-full="assets/images/gallery_1.jpg">
+          <img src="assets/images/thumbs/gallery_1.jpg" alt="Khoảnh khắc cô dâu chú rể" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/images/gallery_2.jpg">
+          <img src="assets/images/thumbs/gallery_2.jpg" alt="Nụ cười hạnh phúc" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/images/gallery_3.jpg">
+          <img src="assets/images/thumbs/gallery_3.jpg" alt="Tình yêu ngập tràn ánh nắng" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/images/gallery_4.jpg">
+          <img src="assets/images/thumbs/gallery_4.jpg" alt="Trang phục cưới vintage trước cổng miếu cổ" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/images/gallery_5.jpg">
+          <img src="assets/images/thumbs/gallery_5.jpg" alt="Cùng uống ly cà phê tình yêu" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+
+        <div class="gallery-item" data-full="assets/images/gallery_6.jpg">
+          <img src="assets/images/thumbs/gallery_6.jpg" alt="Bàn tay nắm lấy bàn tay" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WEDDING VIDEO SECTION -->
+    <section class="video-section" id="video-section">
+      <span class="section-tag">Thước Phim Kỷ Niệm</span>
+      <h3 class="section-title">Video Thiệp Cưới</h3>
+      <div class="section-divider">
+        <div class="line"></div>
+        <div class="symbol">❦</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="video-player-container">
+        <div class="video-border-frame">
+          <div class="video-inner-wrapper">
+            <video class="wedding-video" controls playsinline preload="metadata" poster="assets/images/hero_couple.jpg">
+              <source src="assets/videos/wedding_video.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. MAP & NAVIGATION SECTION -->
+    <section class="map-section" id="map-section">
+      <span class="section-tag">Chỉ Đường</span>
+      <h3 class="section-title">Bản Đồ Đến Nhà Hàng Văn Quý</h3>
+      <div class="section-divider">
+        <div class="line"></div>
+        <div class="symbol">❖</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-frame-wrapper">
+          <iframe 
+            src="https://www.google.com/maps?q=12.054193,107.103244&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Bản đồ chỉ đường đến Nhà hàng Văn Quý, xã Đăk Ơ, Đồng Nai">
+          </iframe>
+        </div>
+        <div class="map-details">
+          <div class="map-info-title">Nhà hàng Văn Quý</div>
+          <div class="map-info-address">Xã Đăk Ơ, Đồng Nai</div>
+          <a href="https://maps.app.goo.gl/qc1AEUkMJfpkDVLa9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-solid fa-map-location-dot"></i>
+            Mở Ứng Dụng Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 9. FOOTER SECTION -->
+    <footer class="footer-section">
+      <div class="footer-quote">
+        "Sự hiện diện của bạn là niềm vinh hạnh của chúng tôi"
+      </div>
+      <p class="footer-thanks">
+        Chân thành cảm ơn tình cảm và sự hiện diện quý báu của toàn thể quý khách!
+      </p>
+      <div class="footer-signature">
+        <span class="name-nowrap">Hoàng Duy</span> <span class="and">&</span> <span class="name-nowrap">Thanh Hằng</span>
+      </div>
+
+      <div style="margin-top: 32px;">
+        <button class="btn btn-outline" id="share-btn">
+          <i class="fa-solid fa-share-nodes"></i>
+          Chia Sẻ Thiệp Mời Đến Bạn Bè
+        </button>
+      </div>
+    </footer>
+
+    <div class="wrapper-ornament-bottom"></div>
+  </main>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL FOR GALLERY
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Đóng"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Ảnh trước"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="Ảnh cưới phóng to" class="lightbox-img" id="lightbox-img">
+    </div>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Ảnh kế tiếp"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/petals.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
